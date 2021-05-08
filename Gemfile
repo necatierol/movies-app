@@ -61,3 +61,10 @@ gem 'devise'
 
 # File
 gem "image_processing"
+
+# API
+gem 'active_model_serializers'
+gem 'devise_token_auth'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-apple'
