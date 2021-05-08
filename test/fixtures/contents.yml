@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item_type: MyString
+  title: MyString
+  description: MyText
+  language: MyString
+  length: MyString
+  date: 2021-05-08 16:40:20
+  content_info: MyText
+  pg: 1
+  url: MyString
+  source: MyString
+  source_url: MyString
+  is_active: false
+
+two:
+  item_type: MyString
+  title: MyString
+  description: MyText
+  language: MyString
+  length: MyString
+  date: 2021-05-08 16:40:20
+  content_info: MyText
+  pg: 1
+  url: MyString
+  source: MyString
+  source_url: MyString
+  is_active: false
