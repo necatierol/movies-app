@@ -1,5 +1,5 @@
 module PaginationHelper
-  MAX_LIMIT = 20;
+  MAX_LIMIT = 20
 
   def limit
     [
@@ -8,9 +8,11 @@ module PaginationHelper
     ].min
   end
 
-  def offset
-    page = [params[:page].to_i - 1, 0].max
+  def current_page
+    [params[:page].to_i, 1].max
+  end
 
-    page  * limit
+  def offset
+    (current_page - 1) * limit
   end
 end
