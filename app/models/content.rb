@@ -1,4 +1,7 @@
 class Content < ApplicationRecord
+  # model association
+  has_many :seasons, dependent: :destroy
+
   # active storage
   has_one_attached :logo
   has_one_attached :cover
