@@ -12,7 +12,9 @@ class ContentSerializer < ActiveModel::Serializer
              :date,
              :content_info,
              :pg,
-             :url
+             :url,
+             :source,
+             :source_url
              # :genres
 
   # def genres 

@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :contents, only: %i[index show] do
         resources :seasons, only: %i[index show] do
+          resources :episodes, only: %i[index show] do
+          end
         end
       end
     end
