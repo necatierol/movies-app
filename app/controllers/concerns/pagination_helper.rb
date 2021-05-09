@@ -15,4 +15,10 @@ module PaginationHelper
   def offset
     (current_page - 1) * limit
   end
+
+  def prev_page
+    prev = current_page - 1
+    
+    prev > 0 ? prev : nil
+  end
 end

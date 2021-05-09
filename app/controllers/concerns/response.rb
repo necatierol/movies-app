@@ -8,6 +8,7 @@ module Response
       results: objects,
       count: count,
       limit: limit,
+      prev_page: prev_page,
       current_page: current_page
     }, each_serializer: serializer, adapter: :json_api, status: status
   end
