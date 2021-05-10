@@ -33,4 +33,8 @@ $ curl localhost:3000/api/v1/contents/:content_id/seasons/:season_id
 $ curl localhost:3000/api/v1/contents/:content_id/seasons/:season_id/episodes
 ## get content season episode by id
 $ curl localhost:3000/api/v1/contents/:content_id/seasons/:season_id/episodes/:episode_id
+
+# authentication
+## sign_up
+$ curl localhost:3000/auth -X POST -H "Content-Type: application/json" -d '{"email": "necati1@mail.com", "password": "123456", "password_confirmation": "123456"}'
 ```
