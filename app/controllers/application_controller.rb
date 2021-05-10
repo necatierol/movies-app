@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
-  include DeviseTokenAuth::Concerns::SetUserByToken
-  include Response
-  include ExceptionHelper
-  include PaginationHelper
+  protect_from_forgery with: :exception, if: :verify_api
+
+  def verify_api
+    params[:controller].split('/')[0] != 'devise_token_auth'
+  end
 end
