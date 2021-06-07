@@ -1,5 +1,12 @@
 # README
 
+## Requirements
+``` bash
+$ ruby -- 2.7.0
+$ gem install rails
+$ npm install --global yarn
+```
+
 ## Installation
 
 ``` bash
