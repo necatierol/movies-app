@@ -1,9 +1,13 @@
-class Api::V1::ContentsController < ApplicationController
+class Api::V1::ContentsController < Api::V1::ApplicationController
   SERIALIZER = ContentSerializer
+  before_action :authenticate_user!
   before_action :set_content, only: [:show]
 
   # GET /contents
   def index
+    puts('mamaamamama');
+    puts(user_signed_in?);
+    puts('mamaamamama');
     @contents = Content.limit(limit).offset(offset)
     @count = Content.count
 

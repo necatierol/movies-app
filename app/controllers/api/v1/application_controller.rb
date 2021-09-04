@@ -1,6 +1,6 @@
-class Api::V1::ContentsController < ApplicationController
-  skip_before_action :verify_authenticity_token
+class Api::V1::ApplicationController < ::ApplicationController
   include DeviseTokenAuth::Concerns::SetUserByToken
+  
   include Response
   include ExceptionHelper
   include PaginationHelper
