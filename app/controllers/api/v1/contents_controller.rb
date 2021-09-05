@@ -1,6 +1,5 @@
 class Api::V1::ContentsController < Api::V1::ApplicationController
   SERIALIZER = ContentSerializer
-  before_action :authenticate_user!
   before_action :set_content, only: [:show]
 
   # GET /contents
